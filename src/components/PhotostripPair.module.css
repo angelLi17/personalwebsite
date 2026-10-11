@@ -1,0 +1,57 @@
+/* Desktop: two tilted strips pinned to the right edge, running off the top and bottom. */
+.pair {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 420px;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.left,
+.right {
+  position: absolute;
+  pointer-events: auto;
+}
+
+.left {
+  left: 20px;
+  top: 78px;
+  transform: rotate(-9deg);
+  transform-origin: top left;
+}
+
+.right {
+  right: 44px;
+  top: -112px;
+  transform: rotate(-2deg);
+}
+
+/* Smaller screens: strips sit below the content, side by side. */
+@media (max-width: 1000px) {
+  .pair {
+    position: static;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 32px var(--gutter) 0;
+    overflow: visible;
+    --strip-width: min(44vw, 176px);
+  }
+
+  .left,
+  .right {
+    position: static;
+  }
+
+  .left {
+    transform: rotate(-3deg);
+  }
+
+  .right {
+    transform: rotate(2deg) translateY(28px);
+  }
+}

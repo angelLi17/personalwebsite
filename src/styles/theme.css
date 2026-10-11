@@ -1,0 +1,57 @@
+:root {
+  --color-bg: #e4eee5;
+  --color-title: #3d6491;
+  --color-nav: #8ea4bf;
+  --color-nav-hover: #3d6491;
+  --color-panel: #eaf5ee;
+  --color-panel-border: #9fb3c8;
+  --color-strip: #d6dde3;
+  --color-frame: #ebf6ee;
+  --color-caption: #4a5562;
+  --color-text: #2f3a44;
+  --color-muted: #6f8196;
+
+  --font-title: 'Comfortaa', system-ui, sans-serif;
+  --font-hand: 'Shadows Into Light Two', cursive;
+  --font-caption: 'Gochi Hand', cursive;
+  --font-body: 'Nunito Sans', system-ui, sans-serif;
+
+  --gutter: 44px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-title);
+  outline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --gutter: 16px;
+  }
+}

@@ -1,0 +1,50 @@
+/* Pages with photostrips: strips are positioned against this box. */
+.stage {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.content {
+  position: relative;
+  padding: 36px var(--gutter) 40px;
+}
+
+/* Leave room on the right for the strips on desktop. */
+.stage .content {
+  max-width: calc(100% - 420px);
+}
+
+
+.projectPanel {
+  width: 440px;
+  max-width: 100%;
+  min-height: 290px;
+  margin-top: 14px;
+}
+
+/* Blog/about: one big panel filling the page, like the mockup. */
+.widePanel {
+  margin-top: 14px;
+  min-height: calc(100vh - 170px);
+  min-height: calc(100dvh - 170px);
+}
+
+.readable {
+  max-width: 68ch;
+}
+
+@media (max-width: 1000px) {
+  .stage {
+    min-height: 0;
+    padding-bottom: 40px;
+  }
+
+  .stage .content {
+    max-width: none;
+  }
+
+  .widePanel {
+    min-height: 60vh;
+  }
+}
