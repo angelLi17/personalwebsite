@@ -5,11 +5,15 @@ import styles from './Photostrip.module.css'
 
 interface PhotostripProps {
   projects: Project[]
+  /** Total frames on the strip; any beyond `projects` render as blank, unclickable frames. */
+  length?: number
   selectedId?: string
   className?: string
 }
 
-export default function Photostrip({ projects, selectedId, className }: PhotostripProps) {
+export default function Photostrip({ projects, length = 0, selectedId, className }: PhotostripProps) {
+  const blanks = Math.max(0, length - projects.length)
+
   return (
     <ol className={`${styles.strip} ${className ?? ''}`}>
       {projects.map((project) => {
@@ -29,6 +33,14 @@ export default function Photostrip({ projects, selectedId, className }: Photostr
           </li>
         )
       })}
+      {Array.from({ length: blanks }, (_, i) => (
+        <li key={`blank-${i}`} aria-hidden="true">
+          <span className={styles.frame}>
+            <span className={styles.photo} />
+            <span className={styles.caption}>&nbsp;</span>
+          </span>
+        </li>
+      ))}
     </ol>
   )
 }
