@@ -14,12 +14,12 @@ export default function NavMenu() {
       <ul className={styles.links}>
         {links.map((link) => (
           <li key={link.to}>
-            <Link to={link.to}>{link.text} /</Link>
+            <Link to={link.to}>❀ {link.text}</Link>
           </li>
         ))}
         <li>
           <a href="https://github.com/angelLi17" target="_blank" rel="noreferrer">
-            github /
+            ❀ github
           </a>
         </li>
       </ul>
