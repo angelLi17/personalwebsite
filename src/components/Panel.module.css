@@ -27,8 +27,8 @@
 }
 
 .corner a {
-  font-family: var(--font-hand);
-  font-size: 25px;
+  font-family: var(--font-nav);
+  font-size: 16px;
   color: var(--color-nav);
   text-decoration: none;
   transition: color 0.2s;
