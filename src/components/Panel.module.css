@@ -31,11 +31,12 @@
   font-size: 16px;
   color: var(--color-nav);
   text-decoration: none;
-  transition: color 0.2s;
 }
 
 .corner a:hover {
   color: var(--color-nav-hover);
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .body {
