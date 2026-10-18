@@ -2,6 +2,10 @@
 
 My personal site — React + TypeScript + Vite, deployed to GitHub Pages.
 
+## Future edits
+- change colors some are too faded needa be darker
+- change background to cream color with small minimalistic drawing
+
 ## Run locally
 
 ```sh
