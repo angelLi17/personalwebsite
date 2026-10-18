@@ -11,10 +11,11 @@
   --color-text: #2f3a44;
   --color-muted: #6f8196;
 
-  --font-title: 'Comfortaa', system-ui, sans-serif;
+  --font-title: 'Reenie Beanie', cursive;
   --font-hand: 'Reenie Beanie', cursive;
   --font-caption: 'Reenie Beanie', cursive;
-  --font-body: 'Nunito Sans', system-ui, sans-serif;
+  --font-body: 'Mulish', system-ui, sans-serif;
+  --font-nav: 'Mulish', system-ui, sans-serif;
 
   --gutter: 44px;
 }

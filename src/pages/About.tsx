@@ -9,7 +9,7 @@ export default function About() {
     <div className={styles.content}>
       <PageTitle>about</PageTitle>
       <Panel label="hi, i'm angel" className={styles.widePanel}>
-        <div className={`${text.prose} ${styles.readable}`}>
+        <div className={text.prose}>
           <p>
             I'm an Electrical Engineering and Computer Science student at UC Berkeley (class of
             2028). Most of my work lives where computer vision meets the real world: I do

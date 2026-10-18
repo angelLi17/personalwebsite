@@ -31,7 +31,7 @@
   margin: 0;
   font-family: var(--font-title);
   font-weight: 500;
-  font-size: 19px;
+  font-size: 26px;
   color: var(--color-text);
 }
 
@@ -75,15 +75,15 @@
 }
 
 .prose h1 {
-  font-size: 26px;
+  font-size: 34px;
 }
 
 .prose h2 {
-  font-size: 22px;
+  font-size: 30px;
 }
 
 .prose h3 {
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .prose a {
